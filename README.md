@@ -1,2 +1,2 @@
-# css-photo-filters
-Css filters like in Instagram
+o# css-photo-filters
+Css filters for images like in Instagram
