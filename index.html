@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Шаблон Bootstrap 101</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    
+
+    <div class="container">
+        <h1>Фильтры, как в Instagram!</h1>
+
+        <h2>Выберите фильтр</h2>
+        <div class="row">
+	        <div class="btn-area">
+	        	<button type="button" data-filter="original" data-description="Без фильтра" class="change-filter btn btn-success btn-sm">Original</button>
+	        	<button type="button" data-filter="clarendon" data-description="Делает цвета осветленными и более интенсивными" class="change-filter btn btn-success btn-sm">Clarendon</button>
+	        	<button type="button" data-filter="gingham" data-description="Добавляет размытие и желтоватый тон" class="change-filter btn btn-success btn-sm">Gingham</button>
+	        	<button type="button" data-filter="reyes" data-description="Винтажный фильтр, осветляет фото и уменьшает насыщенность цветов" class="change-filter btn btn-success btn-sm">Reyes</button>
+	        	<button type="button" data-filter="aden" data-description="Добавляет эффект дымки и приглушает цвета" class="change-filter btn btn-success btn-sm">Aden</button>
+	        	<button type="button" data-filter="perpetua" data-description="Добавляет к фото яркости и зеленого свечения, уменьшает тени" class="change-filter btn btn-success btn-sm">Perpetua</button>
+	        	<button type="button" data-filter="amaro" data-description="Осветляет центр фото" class="change-filter btn btn-success btn-sm">Amaro</button>
+	        	<button type="button" data-filter="hudson" data-description="Смещает оттенки в синюю часть спектра и ослабляет центр фотографии" class="change-filter btn btn-success btn-sm">Hudson</button>
+	        	<button type="button" data-filter="valencia" data-description="Увеличивает экспозицию и добавляет фотографии теплые цвета делая фотографию похожей на снимок из 1980-х годов" class="change-filter btn btn-success btn-sm">Valencia</button>
+	        	<button type="button" data-filter="x-pro-2" data-description="Добавляет яркость и придает теплые тона" class="change-filter btn btn-success btn-sm">X-Pro ll</button>
+	        	<button type="button" data-filter="lo-fi" data-description="Добавляет изображению насыщенности и контраста, подчеркивает тени" class="change-filter btn btn-success btn-sm">Lo-Fi</button>
+	        	<button type="button" data-filter="inkwell" data-description="Обесцвечивает фотографию" class="change-filter btn btn-success btn-sm">Inkwell</button>
+	        	<button type="button" data-filter="toaster" data-description="Делает центр снимка выцветшим, смещая спектр к пурпурным оттенкам отсылающим к фотографиям 1980-х годов" class="change-filter btn btn-success btn-sm">Toaster</button>
+	        	<button type="button" data-filter="walden" data-description="Высветляет центр изображения и делает фото более желтым" class="change-filter btn btn-success btn-sm">Walden</button>
+	        	<button type="button" data-filter="f-1977" data-description="Подчеркивает красные оттенки, делая при этом картинку выцветшей. Примерно так выглядели фото в конце 1970-х" class="change-filter btn btn-success btn-sm">1977</button>
+	        	<button type="button" data-filter="stinson" data-description="Вымывает цвета и осветляет изображение" class="change-filter btn btn-success btn-sm">Stinson</button>
+	        	<button type="button" data-filter="maven" data-description="Затемняет фото, подчеркивает тени и добавляет желтого оттенка" class="change-filter btn btn-success btn-sm">Maven</button>
+	        	<button type="button" data-filter="brooklyn" data-description="Подчеркивает зеленые оттенки" class="change-filter btn btn-success btn-sm">Brooklyn</button>
+	        </div>
+        </div>
+
+        <div class="row">
+        	<div class="filter-description p-3 mb-2 bg-light text-dark">
+        		Без фильтра
+        	</div>
+        </div>
+
+        <div class="row">
+        	<div class="text-center">
+        		<figure id="orig-image" class="">
+        			<img id="img-src" src="src/img/img1.jpg">
+        		</figure>
+        	</div>
+        </div>
+
+        <h2>Изменить изображение</h2>
+        <div class="row">
+	        <div class="btn-area">
+        		<button type="button" data-img-src="1" class="change-image btn btn-info">Img1</button>
+        		<button type="button" data-img-src="2" class="change-image btn btn-info">Img2</button>
+        		<button type="button" data-img-src="3" class="change-image btn btn-info">Img3</button>
+        		<button type="button" data-img-src="4" class="change-image btn btn-info">Img4</button>
+        		<button type="button" data-img-src="5" class="change-image btn btn-info">Img5</button>
+        		<button type="button" data-img-src="6" class="change-image btn btn-info">Img6</button>
+        	</div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script src="src/scripts.js"></script>
+
+</body>
+</html>
