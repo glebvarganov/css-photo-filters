@@ -1,2 +1,2 @@
-o# css-photo-filters
+# css-photo-filters
 Css filters for images like in Instagram
