@@ -1,3 +1,11 @@
+.img-area {
+	max-width: 100%;
+}
+
+.img-area img {
+	max-width: 100%;
+}
+
 .clarendon {
 	line-height: 0;
 	position: relative;
